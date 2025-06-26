@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sample Webpage</title>
+<style>
+  /* Reset some default styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .social-links a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  /* Navigation menu styles */
+ nav.menu {
+    background-color: #555;
+  }
+
+  nav.menu ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav.menu li {
+    margin: 0 15px;
+  }
+
+  nav.menu a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav.menu a:hover {
+    background-color: #777;
+  }
+
+  /* Main layout styles */
+  .container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* Sidebar styles */
+  aside.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-right: 20px;
+  }
+
+  aside.sidebar h3 {
+    margin-bottom: 10px;
+  }
+
+  /* Main content styles */
+  main.content {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    background-color: #e2e2e2;
+    padding: 15px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    aside.sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    main.content {
+      flex-direction: column;
+    }
+    .box {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <a href="https://upload.wikimedia.org/wikipedia/commons/a/a1/RGB_LOGO_APOLLO_TYRES_COMPACT_POS_GTD.jpg">APOLLO TYRES</a></div>
+  <div class="social-links">
+    <a href="https://www.instagram.com/apollotyresltd/?hl=en">Instagram</a>
+    <a href="https://www.linkedin.com/products/apolloio/">linkedin</a>
+    <a href="https://www.facebook.com/ApolloTyresLtd/">Facebook</a>
+  </div>
+</header>
+
+<!-- Menu Bar -->
+<nav class="menu">
+  <ul>
+    <li><a href="https://www.apollotyres.com/en-in/">Home</a></li>
+    <li><a href="https://www.apollotyres.com/en-in/about-us/">About</a></li>
+    <li><a href="https://www.apollotyres.com/en-in/contact-us/">Services</a></li>
+    <li><a href="https://www.apollotyres.com/en-in/contact-us/">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Main Content Area -->
+<div class="container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>Custom Data</h3>
+    <ul>
+      <li>CAR,SUV,VAN</li>
+      <li>BIKE AND SCOOTER</li>
+      <li>EARTHMOVER</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="content">
+    <!-- Box 1 -->
+    <div class="box">
+      <h2>Title 1</h2>
+      <img src="https://www.apollotyres.com/content/dam/orbit/syncforce/products/864/T0013873.png.transform/plp-image/image.png" alt="Image 1"/>
+      <p>A premium tyre for hatchbacks and sedans, offering effortless driving on the highways and city streets. Rediscover the joy of driving with ALNAC 4G's precision control and handling prowess.</p>
+    </div>
+    <!-- Box 2 -->
+    <div class="box">
+      <h2>Title 2</h2>
+      <img src="https://www.apollotyres.com/content/dam/orbit/syncforce/products/1892/T0016908.png.transform/plp-image/image.png" alt="Image 2"/>
+      <p>The Apollo ALPHA is a sports touring radial tyres designed for the ones who do not stop through changing weather and road conditions. Made for the seekers of thrill, the APLHA is built for the ones who ride to go the distance.</p>
+    </div>
+    <!-- Box 3 -->
+    <div class="box">
+      <h2>Title 3</h2>
+      <img src="https://www.apollotyres.com/content/dam/orbit/syncforce/products/1490/T0017190.png.transform/plp-image/image.png" alt="Image 3"/>
+      <p>Superior heavy-duty truck tyre with firm reinforcement for heavy loads.</p>
+    </div>
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 APOLLO TYRES LTD. All rights reserved.</p>
+  <p>Gmail- apollodirect@apollotyres.com</p>
+  <p>Call us on - 1800-212-7070</p>
+</footer>
+
+</body>
+</html>
